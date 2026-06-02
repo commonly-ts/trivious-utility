@@ -27,9 +27,6 @@
 		"lint": "eslint --fix src",
 		"format": "prettier --write src",
 		"typecheck": "tsc --noEmit",
-		"test": "vitest",
-		"dev": "tsx dev/index.ts",
-		"coverage": "vitest run --coverage",
 		"release": "semantic-release",
 		"prepare": "npm run build"
 	},

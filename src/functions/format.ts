@@ -33,3 +33,8 @@ export function shuffleArray<T>(array: T[]) {
 
 	return array;
 }
+
+type Map<V> = { values: () => { toArray: () => V[] } };
+export function mapToArray<V>(map: Map<V>) {
+	return map.values().toArray();
+}

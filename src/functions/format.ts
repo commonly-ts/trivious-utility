@@ -1,4 +1,5 @@
 import { Snowflake, userMention } from "discord.js";
+import { getRandomInt } from "./generate.js";
 
 export function listFormat(iterable: Iterable<string>, locale = "en-nz") {
 	return new Intl.ListFormat(locale).format(iterable);
@@ -18,4 +19,17 @@ export function hexToInt(hex: string): number {
 
 export function isStringValidNumber(value: string) {
 	return !Number.isNaN(+value) && value.trim() !== "";
+}
+
+export function shuffleArray<T>(array: T[]) {
+	let currentIndex = array.length;
+	let randomIndex: number;
+
+	while (currentIndex != 0) {
+		randomIndex = getRandomInt(currentIndex);
+		currentIndex--;
+		[array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+	}
+
+	return array;
 }

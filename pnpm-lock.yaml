@@ -12,8 +12,8 @@ importers:
         specifier: ^14.26.4
         version: 14.26.4
       trivious:
-        specifier: ^2.3.0
-        version: 2.3.0
+        specifier: ^2.3.5
+        version: 2.3.5
     devDependencies:
       '@eslint/js':
         specifier: ^9.39.1
@@ -2584,8 +2584,8 @@ packages:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
 
-  trivious@2.3.0:
-    resolution: {integrity: sha512-EvknJNsZavds+AlcwmN97jniXXJg/sqCvC34oo40s6vHzjMDX3E0dWFvnZHPRhBNXPVV3XHJgS2ffLNaoIN4BQ==}
+  trivious@2.3.5:
+    resolution: {integrity: sha512-r16pDVzYwQRH4Lx9ya9Rj0aeo/qk4Heud5Cr6ALgVW4Mixu96UXfp/fSytH1rVLfKPFXe7QWUHwous/RfF3OnA==}
 
   ts-api-utils@2.4.0:
     resolution: {integrity: sha512-3TaVTaAv2gTiMB35i3FiGJaRfwb3Pyn/j3m/bfAvGe8FB7CF6u+LMYqYlDh7reQf7UNvoTvdfAqHGmPGOSsPmA==}
@@ -5412,8 +5412,9 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  trivious@2.3.0:
+  trivious@2.3.5:
     dependencies:
+      chalk: 5.6.2
       discord.js: 14.26.4
     transitivePeerDependencies:
       - bufferutil

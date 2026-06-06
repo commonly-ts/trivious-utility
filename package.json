@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"type": "module",
 	"license": "Apache-2.0",
-	"packageManager": "pnpm@11.5.0",
+	"packageManager": "pnpm@11.5.2",
 	"publishConfig": {
 		"access": "public"
 	},
@@ -53,6 +53,6 @@
 	},
 	"dependencies": {
 		"discord.js": "^14.26.4",
-		"trivious": "^2.3.0"
+		"trivious": "^2.3.5"
 	}
 }
